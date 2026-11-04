@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stefania Redondo - Full-Stack Developer</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stefania Redondo · Desarrolladora Full-Stack</title>
+<meta name="description" content="Portafolio de Stefania Redondo, desarrolladora Full-Stack y estudiante de Ingeniería de Sistemas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
+<header class="nav">
+  <a href="#inicio" class="logo">stefania<span>.dev</span></a>
+  <button class="burger" id="burger" aria-label="Abrir menú">☰</button>
+  <nav id="menu">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#hackathons">Hackathons</a>
+    <a href="#contacto" class="btn-nav">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-text reveal">
+      <p class="tag">Hola, soy</p>
+      <h1>Stefania <em>Redondo</em></h1>
+      <p class="role">Desarrolladora <span id="typed"></span><span class="cursor">|</span></p>
+      <p class="lead">Ingeniera de Sistemas especializada en traducir necesidades reales en soluciones de software eficientes y escalables</p>
+      <div class="cta">
+        <a href="#proyectos" class="btn primary">Ver proyectos</a>
+        <a href="https://www.linkedin.com/in/stefaniaredondo" target="_blank" rel="noopener" class="btn ghost">LinkedIn</a>
+        <a href="https://github.com/stefa77777" target="_blank" rel="noopener" class="btn ghost">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <div class="blob"></div>
+      <img src="https://avatars.githubusercontent.com/u/208724808?v=4" alt="Foto de Stefania Redondo" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'initials',textContent:'SR'}))">
+    </div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="section reveal">
+    <h2><span>01</span> Sobre mí</h2>
+    <div class="about">
+      <p>Soy desarrolladora Full-Stack y actualmente estudio Ingeniería de Sistemas. He participado en <strong>dos hackathons</strong>, donde aprendí a trabajar en equipo, resolver problemas bajo presión y convertir ideas en productos funcionales.</p>
+      <p>Me formé en el bootcamp <strong>Generation Colombia</strong> (Full-Stack Java), donde colaboré en proyectos en equipo como una tienda en línea y una plataforma para el cuidado de mascotas.</p>
+      <div class="stats">
+        <div><b data-count="13">0</b><small>Repositorios</small></div>
+        <div><b data-count="2">0</b><small>Hackathons</small></div>
+        <div><b data-count="7">0</b><small>Proyectos destacados</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="section reveal">
+    <h2><span>02</span> Habilidades</h2>
+    <div class="skills">
+      <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Java</span><span>Python</span><span>Git</span><span>GitHub</span><span>Figma</span><span>Diseño responsive</span><span>Trabajo en equipo</span>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="section reveal">
+    <h2><span>03</span> Proyectos</h2>
+    <div class="filters" id="filters">
+      <button class="active" data-f="all">Todos</button>
+      <button data-f="web">Web</button>
+      <button data-f="equipo">En equipo</button>
+      <button data-f="java">Java</button>
+      <button data-f="python">Python</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- HACKATHONS -->
+  <section id="hackathons" class="section reveal">
+    <h2><span>04</span> Hackathons</h2>
+    <div class="timeline">
+      <article>
+        <span class="dot"></span>
+        <h3>Hackathon #1 · Trendy Shop <small>13 de octubre de 2026</small></h3>
+        <p>Desarrollo en equipo de una tienda de moda en línea (plataforma de comercio electrónico) durante el hackathon de Generation Colombia, Cohorte 14.</p>
+        <div class="links"><a href="https://github.com/argie-fullstack-java-generation-ch14/trendy-shop" target="_blank" rel="noopener">💻 Código</a><a href="https://argie-fullstack-java-generation-ch14.github.io/trendy-shop/" target="_blank" rel="noopener">🌐 Demo</a></div>
+      </article>
+      <article>
+        <span class="dot"></span>
+        <h3>Hackathon #2 · Agenda telefónica en Java <small>3 de noviembre de 2026</small></h3>
+        <p>Hackathon enfocado en Java: desarrollo de una agenda telefónica trabajando en equipo y bajo presión de tiempo.</p>
+        <div class="links"><a href="https://github.com/Scardon14/hackaton2-agenda-telefonica" target="_blank" rel="noopener">💻 Código</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section contact reveal">
+    <h2><span>05</span> Conectemos</h2>
+    <p>¿Tienes un proyecto, una oportunidad o solo quieres saludar? Escríbeme.</p>
+    <div class="cta center">
+      <a href="https://www.linkedin.com/in/stefaniaredondo" target="_blank" rel="noopener" class="btn primary">Escríbeme en LinkedIn</a>
+      <a href="https://github.com/stefa77777" target="_blank" rel="noopener" class="btn ghost">Ver mi GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>Desarrollado con ❤️ por Stefania Redondo · <span id="year"></span></footer>
+<button id="toTop" aria-label="Volver arriba">↑</button>
+
+<script src="script.js"></script>
 </body>
 </html>
